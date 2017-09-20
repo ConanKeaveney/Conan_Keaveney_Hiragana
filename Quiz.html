@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+
+</head>
+<p5 id="Q" Style="font-size:40px">Pick 10 Characters to practise</p5>
+<body>
+<table  id="table" class="tg">
+    <tr>
+        <th class="tg-wi23"></th>
+        <th onclick = "gi()" class="tg-wi23">-</th>
+        <th class="tg-wi23">k</th>
+        <th class="tg-wi23">s</th>
+        <th class="tg-wi23">t</th>
+        <th class="tg-wi23">n</th>
+        <th class="tg-wi23">h</th>
+        <th class="tg-wi23">m</th>
+        <th class="tg-wi23">y</th>
+        <th class="tg-wi23">r</th>
+        <th class="tg-wi23">w</th>
+        <th class="tg-wi23">-</th>
+    </tr>
+    <tr>
+        <td class="tg-wi23"> a</td>
+        <td onclick="select(1,1)" class="tg-wi23">あa</td>
+        <td onmouseover = "ka()" onmouseout = "gif()" class="tg-wi23">かka</td>
+        <td class="tg-wi23">さsa</td>
+        <td class="tg-wi23">たta</td>
+        <td class="tg-wi23">なna</td>
+        <td class="tg-wi23">はha</td>
+        <td class="tg-wi23">まma</td>
+        <td class="tg-wi23">やya</td>
+        <td class="tg-wi23">らra</td>
+        <td class="tg-wi23">わwa</td>
+        <td class="tg-wi23">んn</td>
+    </tr>
+    <tr>
+        <td class="tg-wi23">i</td>
+        <td class="tg-wi23">い<br>i</td>
+        <td class="tg-wi23">き<br>ki</td>
+        <td class="tg-wi23">し<br>si</td>
+        <td class="tg-wi23">ち<br>ti</td>
+        <td class="tg-wi23">に<br>ni</td>
+        <td class="tg-wi23">ひ<br>hi</td>
+        <td class="tg-wi23">み<br>mi</td>
+        <td class="tg-wi23"></td>
+        <td class="tg-wi23">り<br>ri</td>
+        <td class="tg-wi23"></td>
+        <td class="tg-wi23"></td>
+    </tr>
+    <tr>
+        <td class="tg-wi23">u</td>
+        <td class="tg-wi23">うu</td>
+        <td class="tg-wi23">くku</td>
+        <td class="tg-wi23">すsu</td>
+        <td class="tg-wi23">つtu</td>
+        <td class="tg-wi23">ぬnu</td>
+        <td class="tg-wi23">ふhu</td>
+        <td class="tg-wi23">むmu</td>
+        <td class="tg-wi23">ゆyu</td>
+        <td class="tg-wi23">るru</td>
+        <td class="tg-wi23"></td>
+        <td class="tg-wi23"></td>
+    </tr>
+    <tr>
+        <td class="tg-wi23">e</td>
+        <td class="tg-wi23">えe</td>
+        <td class="tg-wi23">けke</td>
+        <td class="tg-wi23">せse</td>
+        <td class="tg-wi23">てte</td>
+        <td class="tg-wi23">ねne</td>
+        <td class="tg-wi23">へhe</td>
+        <td class="tg-wi23">めme</td>
+        <td class="tg-wi23"></td>
+        <td class="tg-wi23">れre</td>
+        <td class="tg-wi23"></td>
+        <td class="tg-wi23"></td>
+    </tr>
+    <tr>
+        <td class="tg-wi23">o</td>
+        <td class="tg-wi23">おo</td>
+        <td class="tg-wi23">こko</td>
+        <td class="tg-wi23">そso</td>
+        <td class="tg-wi23">とto</td>
+        <td class="tg-wi23">のno</td>
+        <td class="tg-wi23">ほho</td>
+        <td class="tg-wi23">もmo</td>
+        <td class="tg-wi23">よyo</td>
+        <td class="tg-wi23">ろro</td>
+        <td class="tg-wi23">をwo</td>
+        <td class="tg-wi23"></td>
+    </tr>
+</table>
+
+
+
+
+<p style="text-shadow:1px 1px 1px rgba(255,255,0,1);font-weight:normal;color:#000000;letter-spacing:1pt;word-spacing:2pt;font-size:12px;text-align:center;font-family:arial black, sans-serif;line-height:1;"id="unsub"></p>
+<style>
+.tg  {border-collapse:collapse;border-spacing:0;box-shadow: 10px 10px 5px #888888;}
+.tg td{font-family:Arial, sans-serif;font-size:50px;padding:20px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;text-align:center}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:20px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;text-align:center}
+.tg .tg-n0d0{background-color:#f8ff00;color:#cb0000;text-align:center}
+.tg .tg-c432{font-size:36px;background-color:#fe0000;text-align:center}
+.tg .tg-1j71{background-color:#fcff2f;color:#fe0000;text-align:center}
+.tg .tg-fr14{font-size:100%;font-family:serif !important;;background-color:#f8ff00;color:#cb0000;text-align:center}
+
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 48px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+</style>
+<script>
+
+    function select() {
+        var table = document.getElementById("table");
+        var rows = table.rows;
+        var counter = 0;
+        //rows(x).cells(y).style.backgroundColor="yelow";
+        alert("working");
+
+
+    }
+</script>
+
+
+</body>
+</html>
