@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment4</title>
+</head>
+<body>
+<p5 id="Q" Style="font-size:40px">Pick 10 Characters to practise</p5>
+
+<table  id="table2" class="tg">
+
+    <tr>
+
+        <td class="th-1">あa </td>
+        <td class="th-2">かka</td>
+        <td class="th-3">さsa</td>
+        <td class="th-4">たta</td>
+        <td class="th-5">なna</td>
+        <td class="th-6">はha</td>
+        <td class="th-7">まma</td>
+        <td class="th-8">やya</td>
+        <td class="th-9">らra</td>
+        <td class="th-10">わwa</td>
+        <td class="th-11">んn </td>
+    </tr>
+    <tr>
+
+        <td class="th-12">いi </td>
+        <td class="th-13">きki</td>
+        <td class="th-14">しsi</td>
+        <td class="th-15">ちti</td>
+        <td class="th-16">にni</td>
+        <td class="th-17">ひhi</td>
+        <td class="th-18">みmi</td>
+        <td class="th-"></td>
+        <td class="th-19">りri</td>
+        <th class="th-"></th>
+        <th class="th-"></th>
+    </tr>
+    <tr>
+
+        <td class="th-20">うu </td>
+        <td class="th-21">くku</td>
+        <td class="tg-22">すsu</td>
+        <td class="th-23">つtu</td>
+        <td class="th-24">ぬnu</td>
+        <td class="th-25">ふhu</td>
+        <td class="th-26">むmu</td>
+        <td class="th-27">ゆyu</td>
+        <td class="th-28">るru</td>
+        <th class="th-"></th>
+        <th class="th-"></th>
+    </tr>
+    <tr>
+
+        <td class="th-29">えe </td>
+        <td class="th-30">けke</td>
+        <td class="th-31">せse</td>
+        <td class="th-32">てte</td>
+        <td class="th-33">ねne</td>
+        <td class="th-34">へhe</td>
+        <td class="th-35">めme</td>
+        <th class="th-"></th>
+        <td class="th-36">れre</td>
+        <th class="th-"></th>
+        <th class="th-"></th>
+    </tr>
+    <tr>
+
+        <td class="th-37">おo </td>
+        <td class="th-38">こko</td>
+        <td class="th-39">そso</td>
+        <td class="th-40">とto</td>
+        <td class="th-41">のno</td>
+        <td class="th-42">ほho</td>
+        <td class="th-43">もmo</td>
+        <td class="th-44">よyo</td>
+        <td class="th-45">ろro</td>
+        <td class="th-46">をwo</td>
+        <th class="tg-wi23"></th>
+    </tr>
+</table>
+
+<div style='float:left'>
+<table class="tg" id="table">
+    <tr>
+        <th class="tg-c432"></th>
+        <th class="tg-1j71">a-column</th>
+        <th class="tg-1j71">i-column</th>
+        <th class="tg-1j71">u-column</th>
+        <th class="tg-1j71">e-column</th>
+        <th class="tg-1j71">o-column</th>
+    </tr>
+    <tr>
+        <th class="tg-n0d0">a-row</th>
+        <td class="tg-1"; onmouseenter="store(1,'a')"><img id="static1" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12354;(a)</td>
+        <td class="tg-2"; onmouseenter="store(2,'i')"><img id="static2" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12356;(i)</td>
+        <td class="tg-3"; onmouseenter="store(3,'u')"><img id="static3" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12358;(u)</td>
+        <td class="tg-4"; onmouseenter="store(4,'e')"><img id="static4" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12360;(e)</td>
+        <td class="tg-5"; onmouseenter="store(5,'o2')"><img id="static5" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12362;(o)</td>
+    </tr>
+    <tr>
+        <th class="tg-n0d0">k-row</th>
+        <td class="tg-6"; onmouseenter="store(6,'ka')"><img id="static6" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12363;</td>
+        <td class="tg-7"; onmouseenter="store(7,'ki')"><img id="static7" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12365;</td>
+        <td class="tg-8"; onmouseenter="store(8,'ku')"><img id="static8" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12367;</td>
+        <td class="tg-9"; onmouseenter="store(9,'ke')"><img id="static9" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12369;</td>
+        <td class="tg-10"; onmouseenter="store(10,'ko')"><img id="static10" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12371;</td>
+    </tr>
+    <tr>
+        <th class="tg-fr14">s-row</th>
+        <td class="tg-11"; onmouseenter="store(11,'sa')"><img id="static11" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12373;</td>
+        <td class="tg-12"; onmouseenter="store(12,'shi')"><img id="static12" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12375;(shi)</td>
+        <td class="tg-13"; onmouseenter="store(13,'su')"><img id="static13" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12377;</td>
+        <td class="tg-14"; onmouseenter="store(14,'se')"><img id="static14" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12379;</td>
+        <td class="tg-15"; onmouseenter="store(15,'so')"><img id="static15" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12381;</td>
+    </tr>
+    <tr>
+        <th class="tg-n0d0">t-row</th>
+        <td class="tg-16"; onmouseenter="store(16,'ta')"><img id="static16" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12383;</td>
+        <td class="tg-17"; onmouseenter="store(17,'chi')"><img id="static17" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12386;(chi)</td>
+        <td class="tg-18"; onmouseenter="store(18,'tsu')"><img id="static18" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12388;(tsu)</td>
+        <td class="tg-19"; onmouseenter="store(19,'te')"><img id="static19" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12390;</td>
+        <td class="tg-20"; onmouseenter="store(20,'to')"><img id="static20" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12392;</td>
+    </tr>
+    <tr>
+        <th class="tg-n0d0">n-row</th>
+        <td class="tg-21"; onmouseenter="store(21,'na')"><img id="static21" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12394;</td>
+        <td class="tg-22"; onmouseenter="store(22,'ni')"><img id="static22" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12395;</td>
+        <td class="tg-23"; onmouseenter="store(23,'nu')"><img id="static23" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12396;</td>
+        <td class="tg-24"; onmouseenter="store(24,'ne')"><img id="static24" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12397;</td>
+        <td class="tg-25"; onmouseenter="store(25,'no')"><img id="static25" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12398;</td>
+    </tr>
+    <tr>
+        <th class="tg-n0d0">h-row</th>
+        <td class="tg-26"; onmouseenter="store(26,'ha')"><img id="static26" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12399;</td>
+        <td class="tg-27"; onmouseenter="store(27,'ha')"><img id="static27" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12402;</td>
+        <td class="tg-28"; onmouseenter="store(28,'fu')"><img id="static28" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12405;(fu)</td>
+        <td class="tg-29"; onmouseenter="store(29,'he')"><img id="static29" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12408;</td>
+        <td class="tg-30"; onmouseenter="store(30,'ho')"><img id="static30" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12411;</td>
+    </tr>
+    <tr>
+        <th class="tg-n0d0">m-row</th>
+        <td class="tg-31"; onmouseenter="store(31,'ma')"><img id="static31" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12414;</td>
+        <td class="tg-32"; onmouseenter="store(32,'mi')"><img id="static32" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12415;</td>
+        <td class="tg-33"; onmouseenter="store(33,'mu')"><img id="static33" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12416;</td>
+        <td class="tg-34"; onmouseenter="store(34,'me')"><img id="static34" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12417;</td>
+        <td class="tg-35"; onmouseenter="store(35,'mo')"><img id="static35" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12418;</td>
+    </tr>
+    <tr>
+        <th class="tg-n0d0">y-row</th>
+        <td class="tg-36"; onmouseenter="store(36,'ya')"><img id="static36" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12420;</td>
+        <td class="tg-031e"></td>
+        <td class="tg-37"; onmouseenter="store(37,'yu')"><img id="static37" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12422;</td>
+        <td class="tg-031e"></td>
+        <td class="tg-38"; onmouseenter="store(38,'yo')"><img id="static38" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12424;</td>
+    </tr>
+    <tr>
+        <th class="tg-n0d0">r-row</th>
+        <td class="tg-39"; onmouseenter="store(39,'ra')"><img id="static39" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12425;</td>
+        <td class="tg-40"; onmouseenter="store(40,'ri')"><img id="static40" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12426;</td>
+        <td class="tg-41"; onmouseenter="store(41,'ru')"><img id="static41" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12427;</td>
+        <td class="tg-42"; onmouseenter="store(42,'re')"><img id="static42" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12428;</td>
+        <td class="tg-43"; onmouseenter="store(43,'ro')"><img id="static43" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12429;</td>
+    </tr>
+    <tr>
+        <th class="tg-n0d0">w-row</th>
+        <td class="tg-44"; onmouseenter="store(44,'wa')"><img id="static44" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12431;</td>
+        <td class="tg-031e"></td>
+        <td class="tg-031e"></td>
+        <td class="tg-031e"></td>
+        <td class="tg-45"; onmouseenter="store(45,'o')"><img id="static45" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block;">&#12434;(o)</td>
+    </tr>
+    <tr>
+        <td class="tg-46" colspan="6"; onmouseenter="store(46,'n')"><img id="static46" src="img/Hiragana-gifs/static.jpg" style="width:100px; height:100px;display:block; align:center">&#12435;<span>(n)</span></td>
+    </tr>
+</table>
+    </div>
+
+<audio id="audio" src="http://dev.interactive-creation-works.net/1/1.ogg" ></audio>
+
+<button class="btn" onclick="hide()">Quiz</button>
+
+    <p id="Language" onclick="toggle()">Practise Hiragana(Click To Switch)</p>
+
+    <div id ="Quiz-Choices">
+<p class="Q">Question</p>
+        <div id="Q1" class="Ans">
+        <button  class="right" onclick=" correct(1)" >(A)</button>
+        <button class="wrong" onclick=" incorrect(1)">(B)</button>
+        <button class="wrong" onclick=" incorrect(1)">(C)</button>
+        <button class="wrong" onclick=" incorrect(1)">(D)</button>
+        </div>
+        <p  class="Q">Question</p>
+        <div id="Q2" class="Ans">
+            <button class="right" onclick=" correct(2)">(A)</button>
+            <button class="wrong" onclick=" incorrect(2)">(B)</button>
+            <button class="wrong" onclick=" incorrect(2)">(C)</button>
+            <button class="wrong" onclick=" incorrect(2)">(D)</button>
+        </div>
+        <p  class="Q">Question</p>
+        <div id="Q3" class="Ans">
+            <button class="right" onclick=" correct(3)">(A)</button>
+            <button class="wrong" onclick=" incorrect(3)">(B)</button>
+            <button class="wrong" onclick=" incorrect(3)">(C)</button>
+            <button class="wrong" onclick=" incorrect(3)">(D)</button>
+        </div>
+        <p class="Q">Question</p>
+        <div id="Q4" class="Ans">
+            <button class="right" onclick=" correct(4)">(A)</button>
+            <button class="wrong" onclick=" incorrect(4)">(B)</button>
+            <button class="wrong" onclick=" incorrect(4)">(C)</button>
+            <button class="wrong" onclick=" incorrect(4)">(D)</button>
+        </div>
+        <p class="Q">Question</p>
+        <div id="Q5"  class="Ans">
+            <button class="right" onclick=" correct(5)">(A)</button>
+            <button class="wrong" onclick=" incorrect(5)">(B)</button>
+            <button class="wrong" onclick=" incorrect(5)">(C)</button>
+            <button class="wrong" onclick=" incorrect(5)">(D)</button>
+        </div>
+        <p class="Q">Question</p>
+        <div id="Q6"  class="Ans">
+            <button class="right" onclick=" correct(6)">(A)</button>
+            <button class="wrong" onclick=" incorrect(6)">(B)</button>
+            <button class="wrong" onclick=" incorrect(6)">(C)</button>
+            <button class="wrong" onclick=" incorrect(6)">(D)</button>
+        </div>
+        <p class="Q">Question</p>
+        <div id="Q7"  class="Ans">
+            <button class="right" onclick=" correct(7)">(A)</button>
+            <button class="wrong" onclick=" incorrect(7)">(B)</button>
+            <button class="wrong" onclick=" incorrect(7)">(C)</button>
+            <button class="wrong" onclick=" incorrect(7)">(D)</button>
+        </div>
+        <p  class="Q">Question</p>
+        <div id="Q8" class="Ans">
+            <button class="right" onclick=" correct(8)">(A)</button>
+            <button class="wrong" onclick=" incorrect(8)">(B)</button>
+            <button class="wrong" onclick=" incorrect(8)">(C)</button>
+            <button class="wrong" onclick=" incorrect(8)">(D)</button>
+        </div>
+        <p  class="Q">Question</p>
+        <div id="Q9" class="Ans">
+            <button class="right" onclick=" correct(9)">(A)</button>
+            <button class="wrong" onclick=" incorrect(9)">(B)</button>
+            <button class="wrong" onclick=" incorrect(9)">(C)</button>
+            <button class="wrong" onclick=" incorrect(9)">(D)</button>
+        </div>
+        <p  class="Q">Question</p>
+        <div id="Q10" class="Ans">
+            <button class="right" onclick=" correct(10)">(A)</button>
+            <button class="wrong" onclick=" incorrect(10)">(B)</button>
+            <button class="wrong" onclick=" incorrect(10)">(C)</button>
+            <button class="wrong" onclick=" incorrect(10)">(D)</button>
+        </div>
+
+
+
+
+    </div>
+
+<p id="result"></p>
+
+<div id="dbtable"></div>
+<div id="updatedbtable"></div>
+</body>
+
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;box-shadow: 10px 10px 5px #888888;}
+    .tg td{font-family:Arial, sans-serif;font-size:50px;padding:20px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;text-align:center}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:20px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;text-align:center}
+    .tg .tg-n0d0{background-color:#f8ff00;color:#cb0000;text-align:center}
+    .tg .tg-c432{font-size:36px;background-color:#fe0000;text-align:center}
+    .tg .tg-1j71{background-color:#fcff2f;color:#fe0000;text-align:center}
+    .tg .tg-fr14{font-size:100%;font-family:serif !important;;background-color:#f8ff00;color:#cb0000;text-align:center}
+
+    .btn {
+        background: #3498db;
+        background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+        background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+        background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+        background-image: -o-linear-gradient(top, #3498db, #2980b9);
+        background-image: linear-gradient(to bottom, #3498db, #2980b9);
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 28px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 48px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        background: #3cb0fd;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+        text-decoration: none;
+    }
+
+    #Language {
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+        background-color: lightblue;
+
+    }
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        var max = 47;
+        for(i=0;i<max;i++){
+            //alert(max);
+            $("#static"+i).hide();
+            $("#Q").hide();
+            $("#table2").hide();
+            $("#Quiz-Choices").hide();
+            $("#Language").hide();
+
+
+        }
+    });
+
+    function toggle() {
+        //alert($("#Language").text());
+        if($("#Language").text()!="Practise Roumaji(Click To Switch)"){
+            //alert("working");
+            document.getElementById("Language").innerHTML="Practise Roumaji(Click To Switch)"
+
+        }
+        else{
+            document.getElementById("Language").innerHTML="Practise Hiragana(Click To Switch)"
+        }
+
+    }
+        function store(x,y) {
+            var a = x;
+            var b = y;
+
+            var st = document.getElementById('static' + a);
+            //alert(st);
+            $("#static" + a).stop().show("slide");
+            st.src = 'img/Hiragana-gifs/' + b + '.gif';
+
+            $(".tg-" + a).mouseleave(function() {
+
+
+                $("#static"+a).hide("slide");
+                //alert(a);
+                //alert(b);
+            });
+            $(".tg-"+a).click(function() {
+                var audio = document.getElementById("audio");
+                audio.src = 'img/Hiragana-audio/' + b + '.mp3';
+                audio.play();
+            });
+        }
+
+    function hide() {
+        var max = 46;
+        var min = 1;
+        $("#Q").show();
+        $("#table").hide();
+        $("#table2").show();
+        $("#Language").show();
+
+
+
+        $(".btn").hide();
+        var rand = Math.floor(Math.random() * (max - min + 1) + min);
+        //document.getElementById("Quiz").innerHTML='<object type="text/html" data="Quiz.html" style="height:1000px ; width:1000px "></object>';
+        //alert(rand);
+
+    }
+
+    $(document).ready( function() {
+        var counter=0;
+
+        $('#table2').click( function(event) {
+            var target = $(event.target);
+            $td = target.closest('td');
+
+            $td.css('color', 'red');
+            counter++;
+            var col   = $td.index();
+            var row   = $td.closest('tr').index();
+            if(counter==10){
+                //alert("ready");
+                //$("#table2").hide();
+                $("#Q").hide();
+                Quiz();
+
+            }
+
+
+
+        });
+    });
+
+
+    var array=new Array("","","","","","","","","","");
+function Quiz(){
+    //alert("quiz working");
+
+    var table = document.getElementById("table2");
+    var rows = table.rows;
+    var z=0;
+
+
+    for (var i = 0; i < rows.length; i++) {
+        var cells = rows[i].cells;
+        var sum = 0;
+
+
+        for (var x = 0; x < cells.length - 1; x++) {
+            var cell = cells[x];
+            var color=cell.style.color;
+
+            if (color== "red") {
+
+                array[z]=cell.innerHTML;
+                //alert(array[z]);
+                z++;
+            }
+
+        }
+    }
+    $("#table2").hide();
+    $("#Q").hide();
+    if($("#Language").text()!="Practise Roumaji(Click To Switch)"){
+        Questions();
+    }
+    else{
+        Questions2();
+    }
+
+    }
+
+    function Randomise(x){
+        var choices = document.getElementById("Quiz-Choices").getElementsByClassName("Ans")[x];
+        for (var i = choices.children.length; i >= 0; i--) {
+            choices.appendChild(choices.children[Math.random() * i | 0]);
+        }
+
+    }
+    var check=new Array("","","","","","","","","","");
+    function Questions(){
+        var max = 46;
+        var min = 1;
+        var table=document.getElementById("table");
+
+
+        //alert("Q's working");
+
+        $("#Quiz-Choices").show();
+        for (var i = 0; i <10; i++) {
+            var Hiragana = array[i].substring(0, 1);
+            var romaji = array[i].substring(1, 3);
+            check[i]=romaji;
+            //alert(check[i]);
+            //alert("Q"+i);
+            document.getElementById("Quiz-Choices").getElementsByClassName("Q")[i].innerHTML="Question "+(i+1)+": Which one corresponds to "+romaji;
+            document.getElementById("Quiz-Choices").getElementsByClassName("Ans")[i].getElementsByClassName("right")[0].textContent=Hiragana;
+            for (var j = 0; j < 3; j++) {
+                var rand = Math.floor(Math.random() * (max - min + 1) + min);
+                var char=table.getElementsByClassName("tg-"+rand)[0].textContent.substring(0,1);
+                if(char==Hiragana){
+                    var rand2 = Math.floor(Math.random() * (max - min + 1) + min);
+                    char=table2.getElementsByClassName("th-"+rand2)[0].textContent.substring(0,1);
+                }
+                //alert(char);
+                document.getElementById("Quiz-Choices").getElementsByClassName("Ans")[i].getElementsByClassName("wrong")[j].textContent=char
+            }
+
+
+        }
+
+
+        for (var x = 0; x < 10; x++) {
+            Randomise(x);
+        }
+
+
+    }
+
+    function Questions2(){
+        //alert("Questions2")
+        var max = 46;
+        var min = 1;
+        var table=document.getElementById("table");
+        var table2=document.getElementById("table2");
+
+
+        //alert("Q's working");
+
+        $("#Quiz-Choices").show();
+        for (var i = 0; i <10; i++) {
+            var Hiragana = array[i].substring(0, 1);
+            var romaji = array[i].substring(1, 3);
+            check[i]=romaji;
+            //alert(romaji);
+            //alert("Q"+i);
+            document.getElementById("Quiz-Choices").getElementsByClassName("Q")[i].innerHTML="Question "+(i+1)+": Which one corresponds to "+Hiragana;
+            document.getElementById("Quiz-Choices").getElementsByClassName("Ans")[i].getElementsByClassName("right")[0].textContent=romaji;
+            for (var j = 0; j < 3; j++) {
+                var rand = Math.floor(Math.random() * (max - min + 1) + min);
+                var char=table2.getElementsByClassName("th-"+rand)[0].textContent.substring(1,3);
+                if(char==romaji){
+                    var rand2 = Math.floor(Math.random() * (max - min + 1) + min);
+                    char=table2.getElementsByClassName("th-"+rand2)[0].textContent.substring(1,3);
+                }
+                //alert(char);
+                document.getElementById("Quiz-Choices").getElementsByClassName("Ans")[i].getElementsByClassName("wrong")[j].textContent=char
+            }
+
+
+        }
+
+
+        for (var x = 0; x < 10; x++) {
+            Randomise(x);
+        }
+
+
+    }
+
+    var mark=0;
+    var attempts=0;
+    function correct(x){
+
+        check[x-1]=check[x-1]+"c";
+
+        $("#Q"+x).hide();
+        document.getElementById("Quiz-Choices").getElementsByClassName("Q")[x-1].innerHTML="Correct!"
+        mark++;
+        attempts++;
+
+        if(attempts==10){
+            document.getElementById("result").innerHTML="your score is: "+(mark/attempts)*100+"%";
+            filldb();
+            showUser(1);
+
+
+        }
+
+    }
+    function incorrect(x){
+
+        $("#Q"+x).hide();
+        document.getElementById("Quiz-Choices").getElementsByClassName("Q")[x-1].innerHTML="Inorrect"
+        attempts++;
+        if(attempts==10){
+            document.getElementById("result").innerHTML="your score is: " +(mark/attempts)*100+"%";
+            filldb();
+            showUser(1);
+
+
+        }
+
+    }
+
+    function filldb(){
+        for(var i=0;i<10;i++){
+            //alert(check[i].substring(2,3));
+            if(check[i].substring(2,3)=="c"){
+                calldb(0,check[i].substring(0,2));
+            }
+            else{
+                 calldb(1,check[i].substring(0,2));
+            }
+        }
+    }
+
+
+    function calldb(x,str) {
+        //alert(x);
+        if (str == "") {
+            document.getElementById("txtHint").innerHTML = "";
+            return;
+        } else {
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("updatedbtable").innerHTML = this.responseText;
+                }
+            };
+            if(x==0){
+                alert("correct called");
+                xmlhttp.open("GET","correct.php?q="+str,true);
+                xmlhttp.send();
+            }
+            else{
+                alert("incorrect called");
+                xmlhttp.open("GET","attempts.php?q="+str,true);
+                xmlhttp.send();
+            }
+
+        }
+        showUser(1);
+    }
+
+
+    function showUser(str) {
+        if (str == "") {
+            document.getElementById("txtHint").innerHTML = "";
+            return;
+        } else {
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("dbtable").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET","test4.php?q="+str,true);
+            xmlhttp.send();
+        }
+    }
+
+
+</script>
+
+</html>
